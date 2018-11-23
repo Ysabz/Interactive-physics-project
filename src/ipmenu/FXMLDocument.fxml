@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ipmenu.FXMLDocumentController">
+   <children>
+      <Label alignment="CENTER" layoutX="131.0" layoutY="44.0" prefHeight="174.0" prefWidth="705.0" text="Physic's Fun Universe " textFill="#4111eb">
+         <font>
+            <Font name="Juice ITC" size="62.0" />
+         </font>
+      </Label>
+      <Button fx:id="mechanicsButton" layoutX="298.0" layoutY="227.0" mnemonicParsing="false" onAction="#goMechanics" prefHeight="112.0" prefWidth="304.0" text="Mechanics" textFill="#1bab0d">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="OWMButton" layoutX="298.0" layoutY="374.0" mnemonicParsing="false" onAction="#goOWM" prefHeight="112.0" prefWidth="304.0" text="Optics, Waves and Modern Physics" textAlignment="CENTER" textFill="#0711b0" wrapText="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="EandMButton" layoutX="298.0" layoutY="520.0" mnemonicParsing="false" onAction="#goEandM" prefHeight="112.0" prefWidth="304.0" text="Electricity and Magnetism" textAlignment="CENTER" textFill="#880c9e" wrapText="true">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="382.0" layoutY="727.0" mnemonicParsing="false" onAction="#exit" prefHeight="59.0" prefWidth="128.0" text="Exit" textFill="#e00ae8">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="msgLabel" alignment="CENTER" layoutX="35.0" layoutY="869.0" prefHeight="17.0" prefWidth="821.0" text="Hello! Welcome to Physisc's Fun Universe! Select a topic to continue.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

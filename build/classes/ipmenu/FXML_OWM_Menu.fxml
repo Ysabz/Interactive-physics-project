@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ipmenu.FXML_OWM_MenuController">
+   <children>
+      <Label alignment="CENTER" layoutX="77.0" layoutY="39.0" prefHeight="89.0" prefWidth="746.0" text="Optics, Waves and Modern Physics " textFill="#fc6e0f">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="msgLabel" alignment="CENTER" layoutX="34.0" layoutY="869.0" prefHeight="17.0" prefWidth="830.0" text="Hello! Pick a simulation">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="lensesButton" layoutX="355.0" layoutY="212.0" mnemonicParsing="false" onAction="#goLenses" prefHeight="78.0" prefWidth="190.0" text="Lenses">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="thinFilmButton" layoutX="355.0" layoutY="411.0" mnemonicParsing="false" onAction="#goThinFilm" prefHeight="78.0" prefWidth="190.0" text="Thin Film">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="comingSoonButton" layoutX="355.0" layoutY="581.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="190.0" text="Coming soon...">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="77.0" layoutY="762.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Button fx:id="exitButton" layoutX="771.0" layoutY="762.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+   </children>
+</AnchorPane>

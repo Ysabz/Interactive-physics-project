@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ipmenu.FXML_EandM_MenuController">
+   <children>
+      <Label alignment="CENTER" layoutX="88.0" layoutY="23.0" prefHeight="85.0" prefWidth="752.0" text="Electricity and Magnetism" textFill="#5f0cd3" wrapText="true">
+         <font>
+            <Font name="System Bold" size="53.0" />
+         </font>
+      </Label>
+      <Label fx:id="msgLabel" alignment="CENTER" layoutX="75.0" layoutY="869.0" prefHeight="17.0" prefWidth="769.0" text="Hello! Pick a simulation">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="particlesButton" layoutX="353.0" layoutY="200.0" mnemonicParsing="false" onAction="#goParticles" prefHeight="68.0" prefWidth="194.0" text="Particles">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="capacitorsButton" layoutX="353.0" layoutY="367.0" mnemonicParsing="false" onAction="#goCapacitors" prefHeight="68.0" prefWidth="194.0" text="Capacitors">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="comingSoonButton" layoutX="353.0" layoutY="509.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="194.0" text="Coming Soon...">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="88.0" layoutY="806.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Button fx:id="extiButton" layoutX="805.0" layoutY="806.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="MainPane" prefHeight="900.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipmenu.FXMLParticlesController">
+   <children>
+      <AnchorPane fx:id="controlsPane" layoutX="-2.0" layoutY="515.0" prefHeight="366.0" prefWidth="900.0">
+         <children>
+            <Button fx:id="startButton" layoutX="235.0" layoutY="42.0" mnemonicParsing="false" onAction="#startButtonAction" prefHeight="35.0" prefWidth="117.0" text="Start" />
+            <Button fx:id="exitButton" layoutX="234.0" layoutY="208.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="29.0" prefWidth="120.0" text="Exit" />
+            <Button fx:id="doneButton" layoutX="234.0" layoutY="92.0" mnemonicParsing="false" onAction="#doneButtonAction" prefHeight="35.0" prefWidth="117.0" text="Done" />
+            <Button fx:id="pauseButton" layoutX="235.0" layoutY="158.0" mnemonicParsing="false" onAction="#pauseButtonAction" prefHeight="35.0" prefWidth="120.0" text="Pause" />
+            <Button fx:id="helpButton" layoutX="32.0" layoutY="176.0" mnemonicParsing="false" onAction="#helpButtonAction" prefHeight="47.0" prefWidth="115.0" text="Help!" />
+            <Label fx:id="msgLabel" alignment="CENTER" layoutX="34.0" layoutY="260.0" prefHeight="103.0" prefWidth="837.0" text="Hello! Chose positive or negative particles and place them in the space above!" />
+            <Label layoutX="20.0" layoutY="29.0" prefHeight="25.0" prefWidth="139.0" text="Settings:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="positiveParticleRB" layoutX="32.0" layoutY="84.0" mnemonicParsing="false" text="Positive Particle">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="negativeParticleRB" layoutX="34.0" layoutY="119.0" mnemonicParsing="false" text="Negative Particle" toggleGroup="$group" />
+            <LineChart fx:id="chart" layoutX="404.0" layoutY="12.0" prefHeight="248.0" prefWidth="469.0" title="Position vs Time (for the first particle placed)">
+              <xAxis>
+                <NumberAxis label="Time (s)" side="BOTTOM" fx:id="x" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="y" label="Position (m)" side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="animationPane" layoutX="10.0" onMouseClicked="#mouseClicked" onMouseMoved="#mousePosition" prefHeight="531.0" prefWidth="876.0" />
+   </children>
+</AnchorPane>

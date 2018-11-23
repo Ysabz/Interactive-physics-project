@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="900.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipmenu.FXMLDiagramController">
+   <children>
+      <TextField fx:id="objectD" layoutX="506.0" layoutY="574.0" prefHeight="31.0" prefWidth="229.0" />
+      <Label layoutX="506.0" layoutY="530.0" prefHeight="31.0" prefWidth="229.0" text=" ENTER OBJECT DISTANCE:" />
+      <Label layoutX="506.0" layoutY="621.0" prefHeight="31.0" prefWidth="229.0" text="ENTER FOCAL DISTANCE:" />
+      <TextField fx:id="focalD" layoutX="506.0" layoutY="668.0" prefHeight="31.0" prefWidth="229.0" />
+      <Button layoutX="141.0" layoutY="668.0" mnemonicParsing="false" onAction="#helpBAction" prefHeight="31.0" prefWidth="165.0" text="Help" />
+      <Button fx:id="switchB" layoutX="141.0" layoutY="574.0" mnemonicParsing="false" onAction="#switchBAction" prefHeight="31.0" prefWidth="165.0" text="Switch to divergent " />
+      <Button fx:id="startB" layoutX="141.0" layoutY="530.0" mnemonicParsing="false" onAction="#startBAction" prefHeight="31.0" prefWidth="165.0" text="Show the diagram" />
+      <ListView fx:id="lW2" layoutX="678.0" layoutY="52.0" prefHeight="312.0" prefWidth="172.0" />
+      <ListView fx:id="lW1" layoutX="506.0" layoutY="52.0" prefHeight="312.0" prefWidth="172.0" />
+      <Ellipse fill="DODGERBLUE" layoutX="223.0" layoutY="277.0" radiusX="10.0" radiusY="120.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="450.0" endY="300.0" startY="300.0" />
+      <Line fx:id="horizon" endX="900.0" endY="450.0" startY="450.0" />
+      <Line endX="450.0" endY="900.0" startX="450.0" />
+      <Label fx:id="message" layoutX="111.0" layoutY="791.0" prefHeight="31.0" prefWidth="189.0" />
+      <Button fx:id="doneB" layoutX="141.0" layoutY="621.0" mnemonicParsing="false" onAction="#doneButtonAction" prefHeight="31.0" prefWidth="165.0" text="Done" />
+      <TextField fx:id="heightT" layoutX="506.0" layoutY="760.0" prefHeight="31.0" prefWidth="229.0" promptText="max 300 , min 100" />
+      <Label layoutX="506.0" layoutY="711.0" prefHeight="31.0" prefWidth="189.0" text="ENTER OBJECT HEIGHT:" />
+   </children>
+</AnchorPane>
